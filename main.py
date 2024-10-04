@@ -1,1 +1,15 @@
-print("This is a test to see if git is working")
+def deposit():
+    while True:
+        amount = input("What would you like to deposit? $")
+        if amount.isdigit():
+            amount = int(amount)
+            if amount > 0:
+                break
+            else:
+                print("Amount must be greater that 0.")
+        else:
+            print("Please enter a number.")
+    return amount
+
+
+
